@@ -1,12 +1,13 @@
-@charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Aleo&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
    License: none (public domain)
 */
 :root {
   font-size: 10px;
+}
+
+img {
+  width: 100%;
 }
 
 a {
@@ -379,58 +380,200 @@ textarea {
   padding: 0.2em 0;
 }
 
-.header-section__icon p, .header-section__search input {
+.header-section__text--icon p, .header-section__text--search input {
   font-size: 1.4rem;
   line-height: 2.6rem;
-  font-weight: "Josefin Sans" "sans-serif";
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
 }
 
-.header-section__main-header {
-  text-align: center;
+.banner-section__p--two, .banner-section__p {
+  line-height: 2.6rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Josefin Sans", sans-serif;
+  width: 31%;
+  color: #fff;
 }
-.header-section__main-header h1 {
+
+.header-section {
+  position: relative;
+}
+.header-section__text {
+  position: absolute;
+  top: 8%;
+  bottom: 19%;
+  left: 30%;
+  text-align: center;
+  justify-content: center;
+}
+.header-section__text h1 {
   margin-top: 27.7rem;
   font-size: 4.8rem;
   line-height: 2.6rem;
-  font-weight: "Josefin Sans" "sans-serif";
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
+  color: #fff;
 }
-.header-section__main-header h6 {
+.header-section__text h6 {
   font-size: 2.2rem;
   line-height: 2.6rem;
   font-weight: 400;
-  font-weight: "Josefin Sans" "sans-serif";
+  font-family: "Josefin Sans", sans-serif;
   margin-top: 1.1rem;
   margin-bottom: 4.8rem;
+  color: #fff;
 }
-.header-section__search {
+.header-section__text--search {
   margin-bottom: 10.8rem;
+  display: flex;
+  background-color: #fff;
 }
-.header-section__search input {
-  width: 37%;
-  height: 3.938rem;
+.header-section__text--search input {
+  width: 620px;
+  height: 4.5rem;
   text-align: center;
 }
-.header-section__search button {
-  width: 8.6%;
-  height: 3.938rem;
+.header-section__text--search button {
+  width: 150px;
+  height: 4.5rem;
   font-size: 1.4rem;
   line-height: 2.6rem;
-  font-weight: "Aleo", sans-serif;
+  font-family: "Aleo", sans-serif;
   font-weight: 400;
   color: #fff;
   background-color: #5474FD;
   border: none;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-right: 2px;
 }
-/***
+.header-section__text--icon p {
+  color: #fff;
+}
+.header-section__text--icon img {
+  width: 1.7rem;
+  height: 1.1rem;
+  margin-bottom: 14.2rem;
+}
 
-320px — 480px: Mobile devices
-481px — 768px: iPads, Tablets
-769px — 1024px: Small screens, laptops
-1025px — 1200px: Desktops, large screens
-1201px and more —  Extra large screens, TV
+.nav-section {
+  background-color: #5474FD;
+  height: 8rem;
+}
+.nav-section__main-nav {
+  display: flex;
+}
+.nav-section__main-nav h5 {
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  font-weight: 700;
+  color: #fff;
+  margin-left: 33.2rem;
+  margin-right: 39.7rem;
+  margin-top: 3rem;
+}
+.nav-section__list {
+  display: flex;
+}
+.nav-section__list li {
+  margin-top: 3.5rem;
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
+  color: #fff;
+}
+.nav-section__list li:first-child {
+  margin-left: 0;
+}
+.nav-section__list li:last-child {
+  margin-right: 0;
+}
+.nav-section__list li a {
+  line-height: 2.6rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: "Aleo", sans-serif;
+  color: #fff;
+}
+.nav-section__list li a:hover {
+  text-decoration: underline;
+}
 
-***/
+.banner-section {
+  position: relative;
+}
+.banner-section__txt h2 {
+  position: absolute;
+  top: 26%;
+  bottom: 19%;
+  left: 20%;
+  line-height: 2.6rem;
+  font-size: 3.6rem;
+  font-weight: 400;
+  font-family: "Aleo", sans-serif;
+  color: #fff;
+}
+.banner-section__txt a {
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  font-weight: 400;
+  font-family: "Aleo", sans-serif;
+  color: #fff;
+  display: inline-block;
+  background-color: #5474FD;
+  width: 12%;
+  height: 6%;
+  padding-top: 1.8rem;
+  padding-bottom: 1.8rem;
+}
+.banner-section__p {
+  position: absolute;
+  top: 36%;
+  bottom: 19%;
+  left: 20%;
+}
+.banner-section__p--two {
+  position: absolute;
+  top: 51%;
+  bottom: 19%;
+  left: 20%;
+}
+.banner-section__img {
+  position: absolute;
+  top: 15%;
+  bottom: 19%;
+  left: 58%;
+  width: 20%;
+  height: 32%;
+}
+.banner-section__img--two {
+  position: absolute;
+  top: 48%;
+  bottom: 25%;
+  left: 65%;
+  width: 20%;
+  height: 32%;
+}
+
+/*** media queries ***/
+@media screen and (max-width: 1300px) {
+  .banner-section__p--two {
+    top: 54%;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .nav-section {
+    padding: 1rem 0;
+    text-align: center;
+    margin-left: 50%;
+  }
+  .nav-section__main-nav {
+    flex-direction: column;
+  }
+  .nav-section__main-nav li {
+    margin: 0 1rem;
+  }
+}
 
 /*# sourceMappingURL=index.css.map */
