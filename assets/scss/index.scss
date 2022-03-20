@@ -62,7 +62,7 @@ $dark-black: #000;
     }
     h6{ 
       position: absolute;
-      top: 42%;
+      top: 43%;
       left:  19%;
       right: 19%;
       font-size:2.2rem ;
@@ -82,12 +82,14 @@ $dark-black: #000;
       top: 56%;
       left:  36%;
       right: 36%;
+      
       input{
         // width: 37%;
         width: 620px; 
         height: 4.5rem;
         text-align: center;
-        @extend %text-fonts;         
+        @extend %text-fonts; 
+        border: none;        
       }
       button{     
         width: 150px;
@@ -102,12 +104,13 @@ $dark-black: #000;
         margin-top: 2px;
         margin-bottom: 2px;
         margin-right: 2px;
+        display:flex;
       }
     }
     &--icon{     
       p{
         position: absolute;
-        top: 62%;
+        top: 80%;
         left:  6%;
         right: 7%;
         @extend %text-fonts;
@@ -115,7 +118,7 @@ $dark-black: #000;
       }
       img{
         position: absolute;
-        top: 65%;
+        top: 83%;
         left:  49%;
         right: 7%;
         width: 1.7rem;
@@ -125,6 +128,13 @@ $dark-black: #000;
     }
   }
   
+}
+i.header-section__search--icon.gg-search {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+span.search-term{
+  margin-top:8px;
 }
 
 .nav-section{
@@ -366,6 +376,7 @@ $dark-black: #000;
   }
 }
 
+
 .tourist-section{
   position: relative;
   &__inner{
@@ -408,22 +419,12 @@ $dark-black: #000;
       p{
         font-size: 1rem;
         @extend %second-card-font;
-        width: 100%; //masanej mja kqyr apet kur tja qes thojzat
+        width: 100%; 
       }
       
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
 
 .footer-section{
   background-color: $dark-black;
@@ -452,44 +453,500 @@ $dark-black: #000;
   &__list{
     display: flex;
     align-items: center;
-    justify-content: space-between
-    img{  
-      width: 1%;   
+    justify-content: space-between;
+    width: 15rem;
+    margin-left: 72rem;
+    &:hover {
+      transform: scale(1.5);
     }
   }
 }
-
-
-
 
 
 
 /*** media queries ***/
-@media screen and (max-width: 1300px) {
-  .banner-section{
-    &__p{
-      
-      &--two{
-        top:54%;
-        
+// @media screen and (min-width: 1770px) {
+//   book-now-section{
+//     &__card{
+//       &-second{
+//         top: 100%;
+//         left: 50%;
+//       }
+//     }
+//   }
+//   .header-section{
+//     &__text{
+//       h6{
+//         top: 43%;
+//       }
+//     }
+//   }
+//   .tourist-section{
+//     &__inner{
+//       &--img{
+//         left: 25%;
+//         width: 18%;
+//       }
+//     }
+//   }
+//   .footer-section{
+//     &__list{
+//       margin-left: 81rem;
+//     }
+//   }
+// }
+@media screen and (min-width: 1760px) {
+  .header-section{
+    &__text{
+      h6{
+        top: 39%;
+      }
+    }
+  }
+  .tourist-section{
+    &__inner{
+      &--img{
+        left: 25%;
+        width: 18%;
+      }
+    }
+  }
+  .footer-section{
+    &__list{
+      margin-left: 81rem;
+    }
+  }
+  .book-now-section{
+    &__card{
+      &-second{
+        top: 270%;
+        left: 50%;
       }
     }
   }
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (min-width: 1745px) {
+  .book-now-section{
+    &__card{
+      &-second{
+        top: 270%;
+        left: 50%;
+      }
+    }
+  }
+  .tourist-section{
+    &__inner{
+      &--img{
+        left: 25%;
+        width: 18%;
+      }
+    }
+  }
+  .footer-section{
+    &__list{
+      margin-left: 80rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .book-now-section{
+    &__card{
+      &-second{
+        top: 270%;
+        left: 50%;
+      }
+    }
+  }
+  .tourist-section{
+    &__inner{
+      &--img{
+        left: 25%;
+        width: 18%;
+      }
+    }
+  }
+  .footer-section{
+    &__list{
+      margin-left: 78rem;
+    }
+  }
+}
+@media screen and (min-width: 1650px) {
+  .tourist-section{
+    &__inner{
+      &--img{
+        top: 36.5%;
+        left: 26%;
+        width: 18%;
+      }
+    }
+  }
+  .footer-section{
+    &__list{
+      margin-left: 74rem;
+    }
+  }
+}
+@media screen and (max-width: 1500px) {
+  .tourist-section{
+    &__inner{
+      &--card{
+        top: 35.3%;
+        left: 44%;
+        p{
+          width: 105%;
+        }
+      }
+    }
+  }
+  .footer-section{
+    &__list{
+      margin-left: 68rem;
+    }
+  }
+}
+@media screen and (max-width: 1300px) {
+  .header-section{
+    &__text{
+      h1{
+        top:-10%;
+      }
+      h6{
+        top: 40%;
+      }
+    }
+  }
+  .tourist-section{
+    &__inner{
+      &--img{
+        width: 25.5%;
+        height: 40%;
+        left: 20%;
+      }
+      &--card{
+        width: 30%;
+        height: 25%;
+        top: 35.3%;
+        left: 44%;
+        h4{
+          width: 40%;
+        }
+      }
+    }
+  }
+  .footer-section{
+    &__list{
+      margin-left: 58rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header-section{
+    &__text{
+      h6{
+        top: 44%;
+      }
+    }
+    // &--icon{
+    //     p{
+    //       top: 81%;
+    //     }
+    //   }
+  }
   .nav-section{
-    padding: 1rem 0;
+    height: 15.1rem;
     text-align: center;
-    margin-left: 50%;
-    &__main-nav {
+    &__main-nav{
       flex-direction: column;
-      li {
-         margin: 0 1rem;
+    }
+    &__list{
+      text-align: center;
+      margin-left: 38em;
+    }
+  }
+  .banner-section{
+    &__txt{
+      a{
+        top: 63%;
+      }
+    }
+    &__p{
+      width: 33%;
+      top: 35%;
+    }
+    &--two{
+      width: 33%;
+    }
+  }
+  .book-now-section{
+    &__card{
+      top: 15%;
+      &-second{
+        top: 265%;
+        left: 14.5%;
+      }
+    }
+  }
+  .tourist-section{
+    &__inner{
+      &--img{
+        width: 26.5%;
+      }
+    }
+  }
+  .footer-section{
+    &__list{
+      margin-left: 44%;
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .header-section{
+    &__text{
+      h6{
+        top: 46%;
+      }
+    }
+  }
+  .book-now-section{
+    &__card{
+      &-second{
+        top: 258%;
+        left: 14.5%;
       }
     }
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .header-section{
+    &__text{
+      h1{
+        top: -20%;
+      }
+      h6{
+        top: 44%;
+      }
+      &--search{
+        top: 60%;
+      }
+      &--icon{
+        img{
+          top: 85%;
+        }
+      }
+    }
+  }
+  .nav-section{
+    height: 15.1rem;
+    text-align: center;
+    &__list{
+      text-align: center;
+      margin-left: 30rem;
+    }
+  }
+  .banner-section{
+    &__txt{
+      a{
+        top: 79%;
+      }
+    }
+    &__p{
+      &--two{
+        top: 59%;
+      }
+    }
+  }
+  .book-now-section{
+    &__card{
+      top: 5%;
+      height: 25rem;
+      &-second{
+        height: 25rem;
+      }
+      &--header{
+        h6{
+          margin-top: 0.1rem;
+        }       
+      }
+    }
+  }
+  .tourist-section{
+    &__inner{
+      &--img{
+        width: 32%;
+        left: 15%;
+      }
+      &--card{
+       height: 30%;
+       width:32% ;
+       p{
+         width: 110%;
+       }
+      }
+    }
+  }
+  .footer-section{
+    &__list{
+      margin-left: 42%;
+    }
+  }
+}
+@media screen and (max-width: 970px) {
+  .header-section{
+    &__text{
+      h1{
+        top: -30%;
+      }
+    }
+  }
+  .banner-section{
+    &__txt{
+      a{
+        top: 81%;
+      }
+    }
+    &__p{
+      &--two{
+        top:61%;
+      }
+    }
+  }
+  .book-now-section{
+    &__card{
+      &-second{
+        top: 253%;
+      }
+    }
+  }
+  .tourist-section{
+    &__inner{
+      &--img{
+        width: 32.5%;
+      }
+      &--card{
+        p{
+          width: 111%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 920px) {
+  .nav-section{
+    &__list{
+      margin-left: 25rem;
+    }
+  }
+  .banner-section{
+    &__txt{
+      h2{
+        top:15%;
+      }
+    }
+    &__p{
+      top: 27%;
+      &--two{
+        top: 59%;
+      }
+    }
+  }
+  .book-now-section{
+    &__card{
+      &-second{
+        top: 242%;
+      }
+    }
+  }
+  .tourist-section{
+    &__inner{
+      &--card{
+        height: 40%;
+      }
+      &--img{
+        width: 39.5%;
+        left: 10%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .header-section{
+    &__text{
+      &--search{
+        width: 430px;
+        left: 27%;
+      }
+    }
+  }
+  .banner-section{
+    &__txt{
+      h2{
+        top:10%;
+      }
+    }
+    &__p{
+      top: 20%;
+      &--two{
+        top:50%;
+        a{
+         width: 20%;
+        }
+      }
+    }
+  }
+  .book-now-section{
+    &__card{
+      top: 1%;
+      &-second{
+        top: 232%;
+      }
+    }
+  }
+}
+
+// @media screen and (max-width: 760px) {
+//   .header-section{
+//     &__text{
+//       h1{
+//         top: -40%;
+//       }
+//       h6{
+//         top: 54%;
+//       }
+//     }
+//   }
+//   .nav-section{
+//     &__list{
+//       margin-left: 30rem;
+//     }
+//   }
+//   .banner-section{
+//     &__txt{
+//       h2{
+//         line-height: 1.6rem;
+//         font-size: 2.6rem;
+//       }
+//     }
+//   }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

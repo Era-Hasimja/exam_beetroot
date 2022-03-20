@@ -432,7 +432,7 @@ textarea {
 }
 .header-section__text h6 {
   position: absolute;
-  top: 42%;
+  top: 43%;
   left: 19%;
   right: 19%;
   font-size: 2.2rem;
@@ -456,6 +456,7 @@ textarea {
   width: 620px;
   height: 4.5rem;
   text-align: center;
+  border: none;
 }
 .header-section__text--search button {
   width: 150px;
@@ -470,22 +471,32 @@ textarea {
   margin-top: 2px;
   margin-bottom: 2px;
   margin-right: 2px;
+  display: flex;
 }
 .header-section__text--icon p {
   position: absolute;
-  top: 62%;
+  top: 80%;
   left: 6%;
   right: 7%;
   color: #fff;
 }
 .header-section__text--icon img {
   position: absolute;
-  top: 65%;
+  top: 83%;
   left: 49%;
   right: 7%;
   width: 1.7rem;
   height: 1.1rem;
   margin-bottom: 14.2rem;
+}
+
+i.header-section__search--icon.gg-search {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+span.search-term {
+  margin-top: 8px;
 }
 
 .nav-section {
@@ -766,27 +777,300 @@ textarea {
 .footer-section__list {
   display: flex;
   align-items: center;
-  justify-content: space-between img;
-  justify-content-width: 1%;
+  justify-content: space-between;
+  width: 15rem;
+  margin-left: 72rem;
+}
+.footer-section__list:hover {
+  transform: scale(1.5);
 }
 
 /*** media queries ***/
-@media screen and (max-width: 1300px) {
-  .banner-section__p--two {
-    top: 54%;
+@media screen and (min-width: 1760px) {
+  .header-section__text h6 {
+    top: 39%;
+  }
+
+  .tourist-section__inner--img {
+    left: 25%;
+    width: 18%;
+  }
+
+  .footer-section__list {
+    margin-left: 81rem;
+  }
+
+  .book-now-section__card-second {
+    top: 270%;
+    left: 50%;
   }
 }
-@media screen and (max-width: 1250px) {
+@media screen and (min-width: 1745px) {
+  .book-now-section__card-second {
+    top: 270%;
+    left: 50%;
+  }
+
+  .tourist-section__inner--img {
+    left: 25%;
+    width: 18%;
+  }
+
+  .footer-section__list {
+    margin-left: 80rem;
+  }
+}
+@media screen and (min-width: 1700px) {
+  .book-now-section__card-second {
+    top: 270%;
+    left: 50%;
+  }
+
+  .tourist-section__inner--img {
+    left: 25%;
+    width: 18%;
+  }
+
+  .footer-section__list {
+    margin-left: 78rem;
+  }
+}
+@media screen and (min-width: 1650px) {
+  .tourist-section__inner--img {
+    top: 36.5%;
+    left: 26%;
+    width: 18%;
+  }
+
+  .footer-section__list {
+    margin-left: 74rem;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .tourist-section__inner--card {
+    top: 35.3%;
+    left: 44%;
+  }
+  .tourist-section__inner--card p {
+    width: 105%;
+  }
+
+  .footer-section__list {
+    margin-left: 68rem;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .header-section__text h1 {
+    top: -10%;
+  }
+  .header-section__text h6 {
+    top: 40%;
+  }
+
+  .tourist-section__inner--img {
+    width: 25.5%;
+    height: 40%;
+    left: 20%;
+  }
+  .tourist-section__inner--card {
+    width: 30%;
+    height: 25%;
+    top: 35.3%;
+    left: 44%;
+  }
+  .tourist-section__inner--card h4 {
+    width: 40%;
+  }
+
+  .footer-section__list {
+    margin-left: 58rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .header-section__text h6 {
+    top: 44%;
+  }
+
   .nav-section {
-    padding: 1rem 0;
+    height: 15.1rem;
     text-align: center;
-    margin-left: 50%;
   }
   .nav-section__main-nav {
     flex-direction: column;
   }
-  .nav-section__main-nav li {
-    margin: 0 1rem;
+  .nav-section__list {
+    text-align: center;
+    margin-left: 38em;
+  }
+
+  .banner-section__txt a {
+    top: 63%;
+  }
+  .banner-section__p {
+    width: 33%;
+    top: 35%;
+  }
+  .banner-section--two {
+    width: 33%;
+  }
+
+  .book-now-section__card {
+    top: 15%;
+  }
+  .book-now-section__card-second {
+    top: 265%;
+    left: 14.5%;
+  }
+
+  .tourist-section__inner--img {
+    width: 26.5%;
+  }
+
+  .footer-section__list {
+    margin-left: 44%;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .header-section__text h6 {
+    top: 46%;
+  }
+
+  .book-now-section__card-second {
+    top: 258%;
+    left: 14.5%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .header-section__text h1 {
+    top: -20%;
+  }
+  .header-section__text h6 {
+    top: 44%;
+  }
+  .header-section__text--search {
+    top: 60%;
+  }
+  .header-section__text--icon img {
+    top: 85%;
+  }
+
+  .nav-section {
+    height: 15.1rem;
+    text-align: center;
+  }
+  .nav-section__list {
+    text-align: center;
+    margin-left: 30rem;
+  }
+
+  .banner-section__txt a {
+    top: 79%;
+  }
+  .banner-section__p--two {
+    top: 59%;
+  }
+
+  .book-now-section__card {
+    top: 5%;
+    height: 25rem;
+  }
+  .book-now-section__card-second {
+    height: 25rem;
+  }
+  .book-now-section__card--header h6 {
+    margin-top: 0.1rem;
+  }
+
+  .tourist-section__inner--img {
+    width: 32%;
+    left: 15%;
+  }
+  .tourist-section__inner--card {
+    height: 30%;
+    width: 32%;
+  }
+  .tourist-section__inner--card p {
+    width: 110%;
+  }
+
+  .footer-section__list {
+    margin-left: 42%;
+  }
+}
+@media screen and (max-width: 970px) {
+  .header-section__text h1 {
+    top: -30%;
+  }
+
+  .banner-section__txt a {
+    top: 81%;
+  }
+  .banner-section__p--two {
+    top: 61%;
+  }
+
+  .book-now-section__card-second {
+    top: 253%;
+  }
+
+  .tourist-section__inner--img {
+    width: 32.5%;
+  }
+  .tourist-section__inner--card p {
+    width: 111%;
+  }
+}
+@media screen and (max-width: 920px) {
+  .nav-section__list {
+    margin-left: 25rem;
+  }
+
+  .banner-section__txt h2 {
+    top: 15%;
+  }
+  .banner-section__p {
+    top: 27%;
+  }
+  .banner-section__p--two {
+    top: 59%;
+  }
+
+  .book-now-section__card-second {
+    top: 242%;
+  }
+
+  .tourist-section__inner--card {
+    height: 40%;
+  }
+  .tourist-section__inner--img {
+    width: 39.5%;
+    left: 10%;
+  }
+}
+@media screen and (max-width: 860px) {
+  .header-section__text--search {
+    width: 430px;
+    left: 27%;
+  }
+
+  .banner-section__txt h2 {
+    top: 10%;
+  }
+  .banner-section__p {
+    top: 20%;
+  }
+  .banner-section__p--two {
+    top: 50%;
+  }
+  .banner-section__p--two a {
+    width: 20%;
+  }
+
+  .book-now-section__card {
+    top: 1%;
+  }
+  .book-now-section__card-second {
+    top: 232%;
   }
 }
 
